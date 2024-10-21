@@ -18,6 +18,7 @@ export class RegisterPageComponent {
   constructor(private authService: AuthService) {}
 
   register() {
+    console.log(this.user);
     this.authService.register(this.user).subscribe({
       next: (response) => console.log('User registered successfully', response),
       error: (error) => console.error('Error during registration', error)

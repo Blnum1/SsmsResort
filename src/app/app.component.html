@@ -1,1 +1,24 @@
-<router-outlet></router-outlet>
+<app-header></app-header>
+<div class="full-width-container">
+    <div class="d-flex justify-content-center">
+        <a class="nav-link" routerLink="/">
+            <button type="button" class="custom-btn">Home</button>
+        </a>
+
+        <a class="nav-link" routerLink="/room">
+            <button type="button" class="custom-btn">Rooms</button>
+        </a>
+
+        <a class="nav-link" routerLink="/contact-us">
+            <button type="button" class="custom-btn">News</button>
+        </a>
+
+        <a class="nav-link" routerLink="/about-us">
+            <button type="button" class="custom-btn">Contact</button>
+        </a>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <router-outlet></router-outlet>
+</div>
